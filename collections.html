@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>MIX AND MATCH</title>
+  <link rel="stylesheet" href="assets/fontawesome5/css/all.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.min.css" />
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="js/navigation.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.png" />
+
+  <!-- livereload -->
+  <script>
+    document.write(
+      '<script src="http://' +
+      (location.host || '${1:localhost}').split(':')[0] +
+      ':${2:80}/livereload.js?snipver=1"></' +
+      'script>'
+    );
+  </script>
+</head>
+
+<body>
+  <div class="body-container">
+    <!-- notice -->
+    <div class="notice">
+      <p><a href="">Free Frankie Wrap Start Pattern - Click Here</a></p>
+    </div>
+    <!-- nav container -->
+    <div class="nav-container" id="nav-container">
+      <!-- logo -->
+      <div class="nav-logo">
+        <a href="./">
+          <img src="./assets/images/logo.png" alt="">
+        </a>
+      </div>
+      <!-- bars -->
+      <div class="menu-bar">
+        <i class="material-icons" onclick="NavToggle()">menu</i>
+      </div>
+      <!-- left nav -->
+      <div class="nav-left-list" id="nav-left-list">
+        <!-- bars -->
+        <div class="close-bar">
+          <i class="material-icons" onclick="NavToggle()">close</i>
+        </div>
+        <div class="nav-item" id="ni-shop-patterns">
+          <p><a href="">Shop Patterns</a></p>
+          <div class="nav-item-content">
+            <div class="row">
+              <div class="nic-title col-3">
+                <h1>Shop Patterns</h1>
+              </div>
+              <div class="nic-shop-patterns col-3">
+                <p class="nicsp-item"><a href="">Dress</a></p>
+                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                <p class="nicsp-item"><a href="">Dress</a></p>
+                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                <p class="nicsp-item"><a href="">Dress</a></p>
+                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                <p class="nicsp-item"><a href="">Dress</a></p>
+                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+              </div>
+              <div class="nic-featured col-5">
+                <a href="">
+                  <div class="nicf-item">
+                    <img src="assets/images/look-book-img1.png" alt="" />
+                    <p>Impermanance: Shop new Season</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item" id="ni-mix-match">
+          <p><a href="">Mix & Match</a></p>
+          <div class="nav-item-content">
+            <div class="row">
+              <div class="nic-title col-3">
+                <h1>Mix & Match</h1>
+              </div>
+              <div class="nic-shop-patterns col-3">
+                <p class="nicsp-item"><a href="">Dress</a></p>
+                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                <p class="nicsp-item"><a href="">Dress</a></p>
+                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                <p class="nicsp-item"><a href="">Dress</a></p>
+                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                <p class="nicsp-item"><a href="">Dress</a></p>
+                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+              </div>
+              <div class="nic-featured col-5">
+                <a href="">
+                  <div class="nicf-item">
+                    <img src="assets/images/look-book-img2.png" alt="" />
+                    <p>Impermanance: Shop new Season</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item" id="ni-sewing">
+          <p><a href="">Sewing</a></p>
+          <div class="nav-item-content">
+            <div class="row">
+              <div class="nic-title col-3">
+                <h1>Sewing</h1>
+              </div>
+              <div class="nic-shop-patterns col-3">
+                <p class="nicsp-item"><a href="">Dress</a></p>
+                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                <p class="nicsp-item"><a href="">Dress</a></p>
+                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                <p class="nicsp-item"><a href="">Dress</a></p>
+                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                <p class="nicsp-item"><a href="">Dress</a></p>
+                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+              </div>
+              <div class="nic-featured col-5">
+                <a href="">
+                  <div class="nicf-item">
+                    <img src="assets/images/look-book-img3.png" alt="" />
+                    <p>Impermanance: Shop new Season</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-item" id="ni-our-story">
+          <p><a href="">Our Story</a></p>
+        </div>
+        <div class="nav-item currency">
+          <p>Australia ($AUD)</p>
+        </div>
+        <div class="nav-item login">
+          <p><a href="">Login</a></p>
+        </div>
+      </div>
+      <!-- right nav -->
+      <div class="nav-right-list">
+        <div class="nav-item search" onclick="toggleSearch()">
+          <p><span>Search</span> <i class="material-icons">search</i></p>
+        </div>
+        <div class="nav-item favourite">
+          <p>
+            <i id="fav-icon" class="material-icons" onmouseover="changeFavIcon('favorite')"
+              onmouseout="changeFavIcon('favorite_border')">favorite_border</i>
+          </p>
+        </div>
+        <div class="nav-item currency">
+          <p>Australia ($AUD)</p>
+        </div>
+        <div class="nav-item login">
+          <p><a href="">Login</a></p>
+        </div>
+        <div class="nav-item caret">
+          <p>
+            <a href=""><i class="material-icons">shopping_basket</i></a>
+          </p>
+        </div>
+      </div>
+
+      <div class="nav-search-form" id="search-form">
+        <input type="text" placeholder="search" />
+        <button type="submit"><i class="material-icons">search</i></button>
+        <div class="search-close-btn" onclick="toggleSearch()">
+          <i class="material-icons">close</i>
+        </div>
+      </div>
+    </div>
+    <!-- nav-container -->
+
+    <!-- ecommerce container -->
+    <div class="shop-container">
+      <!-- ttile and filter container -->
+      <div class="title-filter">
+        <div class="title">
+          <p>Dresses</p>
+        </div>
+        <div class="filter-sort">
+          <div class="filter" onclick="showFilter()">
+            <p>filters</p>
+            <i class="material-icons">add</i>
+          </div>
+          <div class="sort" onclick="showSort()">
+            <p>sort</p>
+            <i class="material-icons">add</i>
+            <!-- use ajax method inside sortItem() function and list them in product list.
+              you chan also set innerHTML of sorttitle by current selected item -->
+            <div class="sort-options-list">
+              <p onclick="sortItem('newest-in')">
+                <span>Newest In</span>
+              </p>
+              <p onclick="sortItem('low-high')">
+                <span>Price Low To High</span>
+              </p>
+              <p onclick="sortItem('high-low')">
+                <span>Price High To Low</span>
+              </p>
+              <p onclick="sortItem('best-sellers')">
+                <span>Best Sellers</span>
+              </p>
+            </div>
+          </div>
+          <div class="list-style-icons">
+            <div class="two-column-icon" onclick="changeColumn('two')">
+              <span class="active"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="9" viewBox="0 0 10 9">
+                  <path fill="#0D0D0D" fill-rule="evenodd" stroke="#000"
+                    d="M0.5,0.5 L0.5,8.5 L3.5,8.5 L3.5,0.5 L0.5,0.5 Z M6.5,0.5 L6.5,8.5 L9.5,8.5 L9.5,0.5 L6.5,0.5 Z">
+                  </path>
+                </svg>
+              </span>
+              <div class="inactive">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="9" viewBox="0 0 10 9">
+                  <path
+                    d="M0,0 L4,0 L4,9 L0,9 L0,0 Z M1,1 L1,8 L3,8 L3,1 L1,1 Z M6,0 L10,0 L10,9 L6,9 L6,0 Z M7,1 L7,8 L9,8 L9,1 L7,1 Z">
+                  </path>
+                </svg>
+              </div>
+            </div>
+            <div class="four-column-icon" onclick="changeColumn('four')">
+              <div class="active">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="9" viewBox="0 0 22 9">
+                  <path fill="#0D0D0D" fill-rule="evenodd"
+                    d="M95,206 L99,206 L99,215 L95,215 L95,206 Z M101,206 L105,206 L105,215 L101,215 L101,206 Z M107,206 L111,206 L111,215 L107,215 L107,206 Z M113,206 L117,206 L117,215 L113,215 L113,206 Z"
+                    transform="translate(-95 -206)"></path>
+                </svg>
+              </div>
+              <div class="inactive">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="9" viewBox="0 0 22 9">
+                  <path
+                    d="M95,222 L99,222 L99,231 L95,231 L95,222 Z M96,223 L96,230 L98,230 L98,223 L96,223 Z M101,222 L105,222 L105,231 L101,231 L101,222 Z M102,223 L102,230 L104,230 L104,223 L102,223 Z M107,222 L111,222 L111,231 L107,231 L107,222 Z M108,223 L108,230 L110,230 L110,223 L108,223 Z M113,222 L117,222 L117,231 L113,231 L113,222 Z M114,223 L114,230 L116,230 L116,223 L114,223 Z"
+                    transform="translate(-95 -222)"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- filter options  -->
+      <div class="filter-options">
+        <div class="filter-options-items">
+          <div class="filter-options-color">
+            <h5>COLOUR</h5>
+            <div class="colour-options">
+              <p>Multi</p>
+              <p>Black</p>
+              <p>Maroon</p>
+              <p>white</p>
+              <p>Beige</p>
+            </div>
+          </div>
+          <div class="filter-options-size">
+            <h5>SIZE</h5>
+            <div class="colour-options">
+              <p>0</p>
+              <p>1</p>
+              <p>2</p>
+              <p>3</p>
+            </div>
+          </div>
+        </div>
+        <div class="filter-button">
+          <button>APPLY</button>
+        </div>
+      </div>
+      <!-- products-container -->
+      <div class="products-container">
+        <div class="products-list">
+          <!-- items -->
+
+          <!-- pass product id such that this item can be uniquely identified -->
+          <div class="products-item" id="product-id-1">
+            <div class="products-item-details">
+              <div class="pid-name">
+                <p>Valetta maxi dress</p>
+              </div>
+              <div class="pid-price">
+                <p>AUD $540</p>
+              </div>
+              <div class="pid-thumbnails">
+                <div class="pid-thumbnails-item">
+                  <img src="./assets/images/products-sample/p1-thumb1.jpg" onclick="showItem(this)" />
+                </div>
+                <div class="pid-thumbnails-item">
+                  <img src="./assets/images/products-sample/p1-thumb2.jpg" onclick="showItem(this)" />
+                </div>
+              </div>
+              <div class="quick-add">
+                <!-- pass product unique id as above in function -->
+                <div class="qa-title" onclick="productSizeShow('product-id-1')">
+                  <i class="material-icons">add</i>
+                  <p>QUICK ADD</p>
+                </div>
+                <ul class="qa-sizes">
+                  <li>SIZE :</li>
+                  <li>0</li>
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                </ul>
+              </div>
+            </div>
+            <div class="products-item-designs">
+              <!-- product name id should be unique valeta-maxi-dress  -->
+              <div class="products-item-designs-item" id="valeta-maxi-dress">
+                <img src="./assets/images/products-sample/p1-front1.jpg" alt="" />
+                <img src="./assets/images/products-sample/p1-back1.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- pass product id such that this item can be uniquely identified -->
+          <div class="products-item" id="product-id-2">
+            <div class="products-item-details">
+              <div class="pid-name">
+                <p>Valetta maxi dress</p>
+              </div>
+              <div class="pid-price">
+                <p>AUD $540</p>
+              </div>
+              <div class="pid-thumbnails">
+                <div class="pid-thumbnails-item">
+                  <img src="./assets/images/products-sample/p1-thumb1.jpg" onclick="showItem(this)" />
+                </div>
+                <div class="pid-thumbnails-item">
+                  <img src="./assets/images/products-sample/p1-thumb2.jpg" onclick="showItem(this)" />
+                </div>
+              </div>
+              <div class="quick-add">
+                <!-- pass product unique id as above in function -->
+                <div class="qa-title" onclick="productSizeShow('product-id-2')">
+                  <i class="material-icons">add</i>
+                  <p>QUICK ADD</p>
+                </div>
+                <ul class="qa-sizes">
+                  <li>SIZE :</li>
+                  <li>0</li>
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                </ul>
+              </div>
+            </div>
+            <div class="products-item-designs">
+              <!-- product name id should be unique valeta-maxi-dress  -->
+              <div class="products-item-designs-item" id="valeta-maxi-dress">
+                <img src="./assets/images/products-sample/p1-front1.jpg" alt="" />
+                <img src="./assets/images/products-sample/p1-back1.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- pass product id such that this item can be uniquely identified -->
+          <div class="products-item" id="product-id-3">
+            <div class="products-item-details">
+              <div class="pid-name">
+                <p>Valetta maxi dress</p>
+              </div>
+              <div class="pid-price">
+                <p>AUD $540</p>
+              </div>
+              <div class="pid-thumbnails">
+                <div class="pid-thumbnails-item">
+                  <img src="./assets/images/products-sample/p1-thumb1.jpg" onclick="showItem(this)" />
+                </div>
+                <div class="pid-thumbnails-item">
+                  <img src="./assets/images/products-sample/p1-thumb2.jpg" onclick="showItem(this)" />
+                </div>
+              </div>
+              <div class="quick-add">
+                <!-- pass product unique id as above in function -->
+                <div class="qa-title" onclick="productSizeShow('product-id-3')">
+                  <i class="material-icons">add</i>
+                  <p>QUICK ADD</p>
+                </div>
+                <ul class="qa-sizes">
+                  <li>SIZE :</li>
+                  <li>0</li>
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                </ul>
+              </div>
+            </div>
+            <div class="products-item-designs">
+              <!-- product name id should be unique valeta-maxi-dress  -->
+              <div class="products-item-designs-item" id="valeta-maxi-dress">
+                <img src="./assets/images/products-sample/p1-front1.jpg" alt="" />
+                <img src="./assets/images/products-sample/p1-back1.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- pass product id such that this item can be uniquely identified -->
+          <div class="products-item" id="product-id-4">
+            <div class="products-item-details">
+              <div class="pid-name">
+                <p>Valetta maxi dress</p>
+              </div>
+              <div class="pid-price">
+                <p>AUD $540</p>
+              </div>
+              <div class="pid-thumbnails">
+                <div class="pid-thumbnails-item">
+                  <img src="./assets/images/products-sample/p1-thumb1.jpg" onclick="showItem(this)" />
+                </div>
+                <div class="pid-thumbnails-item">
+                  <img src="./assets/images/products-sample/p1-thumb2.jpg" onclick="showItem(this)" />
+                </div>
+              </div>
+              <div class="quick-add">
+                <!-- pass product unique id as above in function -->
+                <div class="qa-title" onclick="productSizeShow('product-id-4')">
+                  <i class="material-icons">add</i>
+                  <p>QUICK ADD</p>
+                </div>
+                <ul class="qa-sizes">
+                  <li>SIZE :</li>
+                  <li>0</li>
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                </ul>
+              </div>
+            </div>
+            <div class="products-item-designs">
+              <!-- product name id should be unique valeta-maxi-dress  -->
+              <div class="products-item-designs-item" id="valeta-maxi-dress">
+                <img src="./assets/images/products-sample/p1-front1.jpg" alt="" />
+                <img src="./assets/images/products-sample/p1-back1.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- items -->
+        </div>
+      </div>
+      <!-- products-container -->
+    </div>
+    <!-- ecommerce container -->
+  </div>
+  <!-- body container---------------------------------------------- -->
+
+  <!-- footer container ------------------------------------------- -->
+  <div class="footer-container">
+    <div class="footer-content">
+      <div class="sewing">
+        <h1 class="title">Sewing</h1>
+        <div class="sewing-list">
+          <p class="sewing-items"><a href="">Mix & Match Collections</a></p>
+          <p class="sewing-items"><a href="">Sew-Along Tutorials</a></p>
+          <p class="sewing-items">
+            <a href="">Quick Lessons + Journals</a>
+          </p>
+          <p class="sewing-items"><a href="">Difficulty Scale</a></p>
+        </div>
+      </div>
+
+      <div class="discover">
+        <h1 class="title">Discover</h1>
+        <div class="discover-list">
+          <p class="discover-items">
+            <a href="">Our Story</a>
+          </p>
+          <p class="discover-items">
+            <a href="">Size Guide</a>
+          </p>
+          <p class="discover-items">
+            <a href="">Style Maker Stories</a>
+          </p>
+          <p class="discover-items">
+            <a href="">FAQs</a>
+          </p>
+          <p class="discover-items">
+            <a href="">GIving Back</a>
+          </p>
+          <p class="discover-items">
+            <a href="">Contact Us</a>
+          </p>
+          <p class="discover-items">
+            <a href="">Garment Care</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="contact">
+        <div class="icon-title">
+          <img src="./assets/icons/sewing-icon.png" alt="" />
+          <p class="title">Get Our Free Frankie Wrap Skirt Pattern</p>
+        </div>
+        <div class="footer-link">
+          <p><a href="">GET IT HERE</a></p>
+        </div>
+        <div class="footer-social-links">
+          <a href=""><i class="fab fa-instagram"></i></a>
+          <a href=""><i class="fab fa-youtube"></i></a>
+          <a href=""><i class="fab fa-pinterest-p"></i></a>
+          <a href=""><i class="fab fa-facebook-f"></i></a>
+          <a href=""><i class="far fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p class="copyright-label">copyright Made Lable 2020</p>
+      <p class="privacy-policy"><a href="">Privacy Policy</a></p>
+      <p class="terms-of-use"><a href="">Terms of Use</a></p>
+    </div>
+  </div>
+  <!-- footer container ------------------------------------------- -->
+</body>
+
+<script src="./js/collections.js"></script>
+
+</html>
