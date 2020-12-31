@@ -44,6 +44,7 @@
   position: absolute;
   right: 30px;
   top: 5px;
+  box-shadow: 0 3px 6px rgba(#000, .2);
 
   @keyframes expand_search {
     from {
@@ -293,7 +294,7 @@
 }
 
 // responsive -----------------------------------------------------------------------------------------------------------------------
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
   .body-container {
 
     // notice

@@ -240,17 +240,17 @@ $product_info = 'For full pattern details click the below SHOP buttons to explor
         <!-- dress slider container -->
         <div class="dress-slider-container">
             <div class="row">
-                <div class="outline-slider col-4">
+                <div class="outline-slider col-lg-4 col-md-4">
                     <!-- top slider -->
                     <div class="dress-top-slider">
                         <div class="slideshow-container-1">
-                            <div class="mySlides1 fade" data-id="<?php echo $top_id1 ?>">
+                            <div class="mySlides1" data-id="<?php echo $top_id1 ?>">
                                 <img src="<?php echo $top_image1 ?>" />
                             </div>
-                            <div class="mySlides1 fade" data-id="<?php echo $top_id2 ?>">
+                            <div class="mySlides1" data-id="<?php echo $top_id2 ?>">
                                 <img src="<?php echo $top_image2 ?>" />
                             </div>
-                            <div class="mySlides1 fade" data-id="<?php echo $top_id3 ?>">
+                            <div class="mySlides1" data-id="<?php echo $top_id3 ?>">
                                 <img src="<?php echo $top_image3 ?>" />
                             </div>
                             <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
@@ -260,13 +260,13 @@ $product_info = 'For full pattern details click the below SHOP buttons to explor
                     <!-- bottom slider -->
                     <div class="dress-skirt-slider">
                         <div class="slideshow-container-2">
-                            <div class="mySlides2 fade" data-id="<?php echo $skirt_id1 ?>">
+                            <div class="mySlides2" data-id="<?php echo $skirt_id1 ?>">
                                 <img src="<?php echo $skirt_image1 ?>" />
                             </div>
-                            <div class="mySlides2 fade" data-id="<?php echo $skirt_id2 ?>">
+                            <div class="mySlides2" data-id="<?php echo $skirt_id2 ?>">
                                 <img src="<?php echo $skirt_image2 ?>" />
                             </div>
-                            <div class="mySlides2 fade" data-id="<?php echo $skirt_id3 ?>">
+                            <div class="mySlides2" data-id="<?php echo $skirt_id3 ?>">
                                 <img src="<?php echo $skirt_image3 ?>" />
                             </div>
                             <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
@@ -275,7 +275,7 @@ $product_info = 'For full pattern details click the below SHOP buttons to explor
                     </div>
                 </div>
 
-                <div class="slider-details col-8">
+                <div class="slider-details col-lg-8 col-md-8">
                     <div class="combination-img-details">
                         <div class="top-skirt-combination-img">
                             <!-- top skirt final image is shown here no need to put any code here you just need to save the filename correctly ie.
