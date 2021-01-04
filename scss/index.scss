@@ -1,12 +1,15 @@
 @import './bootstrap/bootstrap.css';
 
+@import './components/typography';
 @import './components/all';
 @import './components/responsive';
 @import './components/navigation';
 @import './components/footer';
 @import './components/dress-slider';
+@import './components/blog-content';
 
 
 @import './pages/home';
 @import './pages/collections';
 @import './pages/blog-overview';
+@import './pages/blog-inner';

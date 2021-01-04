@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>MIX AND MATCH</title>
+    <link rel="stylesheet" href="assets/fontawesome5/css/all.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="js/navigation.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.png" />
+
+</head>
+
+<body>
+    <div class="body-container">
+        <!-- notice -->
+        <div class="notice">
+            <p><a href="">Free Frankie Wrap Start Pattern - Click Here</a></p>
+        </div>
+        <!-- nav container -->
+        <div class="nav-container" id="nav-container">
+            <!-- logo -->
+            <div class="nav-logo">
+                <a href="./">
+                    <img src="./assets/images/logo.png" alt="">
+                </a>
+            </div>
+            <!-- bars -->
+            <div class="menu-bar">
+                <i class="material-icons" onclick="NavToggle()">menu</i>
+            </div>
+            <!-- left nav -->
+            <div class="nav-left-list" id="nav-left-list">
+                <!-- bars -->
+                <div class="close-bar">
+                    <i class="material-icons" onclick="NavToggle()">close</i>
+                </div>
+                <div class="nav-item" id="ni-shop-patterns">
+                    <p><a href="">Shop Patterns</a></p>
+                    <div class="nav-item-content">
+                        <div class="row">
+                            <div class="nic-title col-3">
+                                <h1>Shop Patterns</h1>
+                            </div>
+                            <div class="nic-shop-patterns col-3">
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                            </div>
+                            <div class="nic-featured col-5">
+                                <a href="">
+                                    <div class="nicf-item">
+                                        <img src="assets/images/look-book-img1.png" alt="" />
+                                        <p>Impermanance: Shop new Season</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item" id="ni-mix-match">
+                    <p><a href="">Mix & Match</a></p>
+                    <div class="nav-item-content">
+                        <div class="row">
+                            <div class="nic-title col-3">
+                                <h1>Mix & Match</h1>
+                            </div>
+                            <div class="nic-shop-patterns col-3">
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                            </div>
+                            <div class="nic-featured col-5">
+                                <a href="">
+                                    <div class="nicf-item">
+                                        <img src="assets/images/look-book-img2.png" alt="" />
+                                        <p>Impermanance: Shop new Season</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item" id="ni-sewing">
+                    <p><a href="">Sewing</a></p>
+                    <div class="nav-item-content">
+                        <div class="row">
+                            <div class="nic-title col-3">
+                                <h1>Sewing</h1>
+                            </div>
+                            <div class="nic-shop-patterns col-3">
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                            </div>
+                            <div class="nic-featured col-5">
+                                <a href="">
+                                    <div class="nicf-item">
+                                        <img src="assets/images/look-book-img3.png" alt="" />
+                                        <p>Impermanance: Shop new Season</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item" id="ni-our-story">
+                    <p><a href="">Our Story</a></p>
+                </div>
+                <div class="nav-item currency">
+                    <p>Australia ($AUD)</p>
+                </div>
+                <div class="nav-item login">
+                    <p><a href="">Login</a></p>
+                </div>
+            </div>
+            <!-- right nav -->
+            <div class="nav-right-list">
+                <div class="nav-item search" onclick="toggleSearch()">
+                    <p><span>Search</span> <i class="material-icons">search</i></p>
+                </div>
+                <div class="nav-item favourite">
+                    <p>
+                        <i id="fav-icon" class="material-icons" onmouseover="changeFavIcon('favorite')"
+                            onmouseout="changeFavIcon('favorite_border')">favorite_border</i>
+                    </p>
+                </div>
+                <div class="nav-item currency">
+                    <p>Australia ($AUD)</p>
+                </div>
+                <div class="nav-item login">
+                    <p><a href="">Login</a></p>
+                </div>
+                <div class="nav-item caret">
+                    <p>
+                        <a href=""><i class="material-icons">shopping_basket</i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="nav-search-form" id="search-form">
+                <input type="text" placeholder="search" />
+                <button type="submit"><i class="material-icons">search</i></button>
+                <div class="search-close-btn" onclick="toggleSearch()">
+                    <i class="material-icons">close</i>
+                </div>
+            </div>
+        </div>
+        <!-- nav-container -->
+
+        <!-- ecommerce container -->
+        <section class="section section-blog-spage">
+            <div class="blog-spage">
+                <div class="blog-spage--row">
+                    <div class="blog-spage--side">
+                        <div class="blog-spage--side-sticky">
+                            <div class="blog-spage--side-text">
+                                <h3>Sewing Hournals</h3>
+                                <h2 class="heading">how to learn to sew</h2>
+                            </div>
+                            <div class="blog-spage--side-freeptn">
+                                <img src="./assets/images/Frankie-Wrap.jpg" alt="">
+                                <a href="#">Free Pattern</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-spage--main">
+                        <div class="blog-content">
+                            <div class="blog-content--heroimg">
+                                <img src="./assets/images/pexels-cottonbro-4614110.jpg" alt="">
+                            </div>
+                            <div class="blog-content--text">
+                                <h2>Wondering where to start with your first sewing project.
+                                    here are our 5 tips to get through a SEWING project you feel you’ll never be able to
+                                    complete…</h2>
+                                <h2><a href="#">Linked Text h2</a></h2>
+                                <h1>h1 header style</h1>
+                                <h2>h2 Header Style</h2>
+                                <h3>H3 Header Style</h3>
+                                <p>Each one of our sewing projects has a sew-along video tutorial that will show you
+                                    exactly
+                                    what you need to do. If you are still finding your confidence with this sewing world
+                                    then we say grab a cuppa and watch the entire tutorial first so you know exactly
+                                    what
+                                    you are going to be doing and can practice anything that looks a bit tricky first!
+                                </p>
+                                <a href="#" class="blog-content--copy">Body Copy Link</a>
+                                <div class="blog-content--notice">
+                                    <p>“I LOVED the video. I watched it first before I did anything else which gave me
+                                        the
+                                        confidence to sew an entire couture line of gowns… but I also had it open the
+                                        entire
+                                        time I was sewing.</p>
+                                    <p>So I would watch the next step, get ready, do the steps and then rewatch or
+                                        rewind as
+                                        I needed to. It was amazing, like having a teacher in the room.”</p>
+                                    <span>- Katrina, SEWED THE DUSKY ROSE DRESS</span>
+                                </div>
+                                <p>Sewing a sample with a second-hand sheet allows you to cheaply practice your project
+                                    before you cut into your material and without the fear you are going to mess it up.
+                                    Make
+                                    sure you practice all the tricky parts on the sample and if you don’t quite feel
+                                    like
+                                    you mastered them… Just practice that one skill again.</p>
+                                <p>It will also give you an indication if you have selected the right size. More on that
+                                    here.</p>
+
+                                <div class="blog-content--spacer"></div>
+                                <ul class="blog-content--listnum">
+                                    <li>
+                                        <span>01. CHOOSE THE RIGHT FABRIC</span>
+                                        <p>Our patterns work best with woven, non-stretch fabric with a nice drape – we
+                                            always suggest Rayon or Viscose as it is soft to the touch and is also
+                                            biodegradable which is a bonus.</p>
+                                    </li>
+                                    <li>
+                                        <span>02. DON’T SHY AWAY FROM THE RISK</span>
+                                        <p>We have seen a fair bit of information around that says this is a hard fabric
+                                            to
+                                            sew with but if you take your time and pin all your seams it’s actually not
+                                            that
+                                            tricky.</p>
+                                    </li>
+                                    <li>
+                                        <span>03. CHOOSE THE RIGHT WEIGHT</span>
+                                        <p>The worst thing you can do is use a heavy (easy to sew) fabric on a pattern
+                                            that
+                                            is for a light, floating dress as even if you get every seam and hem perfect
+                                            the
+                                            final dress will be disappointing as it won’t drape as intended.</p>
+                                    </li>
+                                </ul>
+                                <div class="blog-content--spacer"></div>
+                                <p>Sewing is more than just mastering the machine. Take your time with the cutting,
+                                    press
+                                    every seam (before and after) you can never press a garment too much while sewing &
+                                    pin
+                                    everything before you head to the machine and you will be amazed in the difference.
+                                </p>
+                                <div class="blog-content--img">
+                                    <img src="./assets/images/Estella_Flower-Mini_.jpg" alt="">
+                                </div>
+                                <p>Sewing is more than just mastering the machine. Take your time with the cutting,
+                                    press
+                                    every seam (before and after) you can never press a garment too much while sewing &
+                                    pin
+                                    everything before you head to the machine and you will be amazed in the difference.
+                                </p>
+                                <p>Sewing is more than just mastering the machine. Take your time with the cutting,
+                                    press
+                                    every seam (before and after) you can never press a garment too much while sewing &
+                                    pin
+                                    everything before you head to the machine and you will be amazed in the difference.
+                                </p>
+                                <ul class="blog-content--list">
+                                    <li>Our patterns work best with woven, non-stretch fabric with a nice drape – we
+                                        always
+                                        suggest Rayon or Viscose as it is soft to the touch and is also biodegradable
+                                        which
+                                        is a bonus.</li>
+                                    <li>We have seen a fair bit of information around that says this is a hard fabric to
+                                        sew
+                                        with but if you take your time and pin all your seams it’s actually not that
+                                        trick.
+                                    </li>
+                                    <li>The worst thing you can do is use a heavy (easy to sew) fabric on a pattern that
+                                        is
+                                        for a light, floating dress as even if you get every seam and hem perfect the
+                                        final
+                                        dress will be disappointing as it won’t drape as intended.</li>
+                                </ul>
+                                <div class="blog-content--size">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="blog-content--size-img">
+                                                <img src="./assets/images/screenshot-3.png" alt="">
+                                            </div>
+                                            <p><strong>Small Bust Adjustment</strong></p>
+                                            <p>(BUST IS TOO BIG)</p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="blog-content--size-img">
+                                                <img src="./assets/images/screenshot-4.png" alt="">
+                                            </div>
+                                            <p><strong>Full Bust Adjustment</strong></p>
+                                            <p>(BUST IS TOO Tight)</p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="blog-content--size-img">
+                                                <img src="./assets/images/screenshot-4.png" alt="">
+                                            </div>
+                                            <p><strong>LENGTHENING BODICE</strong></p>
+                                            <p>(FOR LONG TORSO)</p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="blog-content--size-img">
+                                                <img src="./assets/images/screenshot-2.png" alt="">
+                                            </div>
+                                            <p><strong>SHORTENING BODICE</strong></p>
+                                            <p>(FOR SHORT TORSO)</p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="blog-content--size-img">
+                                                <img src="./assets/images/screenshot-frente.png" alt="">
+                                            </div>
+                                            <p><strong>SHORTENING SKIRT</strong></p>
+                                            <p>(FOR SHORT LEGS)</p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="blog-content--size-img">
+                                                <img src="./assets/images/screenshot-3.png" alt="">
+                                            </div>
+                                            <p><strong>LENGTHENING SKIRT</strong></p>
+                                            <p>(FOR LONG LEGS)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2>Table Style</h2>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>Size</td>
+                                            <td>4</td>
+                                            <td>6</td>
+                                            <td>8</td>
+                                            <td>10</td>
+                                            <td>12</td>
+                                            <td>14</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bust</td>
+                                            <td>76</td>
+                                            <td>81</td>
+                                            <td>86</td>
+                                            <td>91</td>
+                                            <td>96</td>
+                                            <td>101</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Waist</td>
+                                            <td>84</td>
+                                            <td>86</td>
+                                            <td>91</td>
+                                            <td>101</td>
+                                            <td>106</td>
+                                            <td>111</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hip</td>
+                                            <td>122</td>
+                                            <td>132</td>
+                                            <td>142</td>
+                                            <td>152</td>
+                                            <td>162</td>
+                                            <td>172</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Length Mini</td>
+                                            <td>150</td>
+                                            <td>160</td>
+                                            <td>170</td>
+                                            <td>180</td>
+                                            <td>190</td>
+                                            <td>200</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Length Midi</td>
+                                            <td>170</td>
+                                            <td>180</td>
+                                            <td>190</td>
+                                            <td>200</td>
+                                            <td>210</td>
+                                            <td>220</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h2 class="text-center"><a href="#">Back to all sewing Journals</a></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-blog-herotext">
+            <div class="blog-herotext">
+                <h2>What Will You Create Next</h2>
+            </div>
+        </section>
+
+        <section class="section section-blog-slider">
+            <div class="container">
+                <div class="blog-slider">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="blog-slider-img">
+                                <img src="./assets/images/0I7A2760.jpg" alt="">
+                            </div>
+                            <p><strong>SIERRA BELLE WRAP DRESS</strong></p>
+                            <p>$16AUD</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="blog-slider-img">
+                                <img src="./assets/images/Wall.jpg" alt="">
+                            </div>
+                            <p><strong>NOMAD DREAMER TOP</strong></p>
+                            <p>$8AUD</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="blog-slider-img">
+                                <img src="./assets/images/0I7A2647.jpg" alt="">
+                            </div>
+                            <p><strong>FREYA STARGAZER WRAP DRESS</strong></p>
+                            <p>$16AUD</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="blog-slider-img">
+                                <img src="./assets/images/0I7A2520.jpg" alt="">
+                            </div>
+                            <p><strong>FREYA BELLE WRAP DRESS</strong></p>
+                            <p>$16AUD</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ecommerce container -->
+    </div>
+    <!-- body container---------------------------------------------- -->
+
+    <!-- footer container ------------------------------------------- -->
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="sewing">
+                <h1 class="title">Sewing</h1>
+                <div class="sewing-list">
+                    <p class="sewing-items"><a href="">Mix & Match Collections</a></p>
+                    <p class="sewing-items"><a href="">Sew-Along Tutorials</a></p>
+                    <p class="sewing-items">
+                        <a href="">Quick Lessons + Journals</a>
+                    </p>
+                    <p class="sewing-items"><a href="">Difficulty Scale</a></p>
+                </div>
+            </div>
+
+            <div class="discover">
+                <h1 class="title">Discover</h1>
+                <div class="discover-list">
+                    <p class="discover-items">
+                        <a href="">Our Story</a>
+                    </p>
+                    <p class="discover-items">
+                        <a href="">Size Guide</a>
+                    </p>
+                    <p class="discover-items">
+                        <a href="">Style Maker Stories</a>
+                    </p>
+                    <p class="discover-items">
+                        <a href="">FAQs</a>
+                    </p>
+                    <p class="discover-items">
+                        <a href="">GIving Back</a>
+                    </p>
+                    <p class="discover-items">
+                        <a href="">Contact Us</a>
+                    </p>
+                    <p class="discover-items">
+                        <a href="">Garment Care</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="contact">
+                <div class="icon-title">
+                    <img src="./assets/icons/sewing-icon.png" alt="" />
+                    <p class="title">Get Our Free Frankie Wrap Skirt Pattern</p>
+                </div>
+                <div class="footer-link">
+                    <p><a href="">GET IT HERE</a></p>
+                </div>
+                <div class="footer-social-links">
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                    <a href=""><i class="fab fa-pinterest-p"></i></a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p class="copyright-label">copyright Made Lable 2020</p>
+            <p class="privacy-policy"><a href="">Privacy Policy</a></p>
+            <p class="terms-of-use"><a href="">Terms of Use</a></p>
+        </div>
+    </div>
+    <!-- footer container ------------------------------------------- -->
+</body>
+
+<script src="./js/collections.js"></script>
+
+</html>
