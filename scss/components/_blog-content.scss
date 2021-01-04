@@ -137,12 +137,13 @@
 
         &-img {
             width: 100%;
+            max-width: 255px;
+            height: 255px;
+            @include margin-auto;
             margin-bottom: 10px;
-            // height: 255px;
 
             img {
-                width: 100%;
-                // @include imgfit;
+                @include imgfit;
             }
         }
 
