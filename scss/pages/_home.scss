@@ -83,146 +83,7 @@
                 margin: auto;
                 margin-top: 5vh;
 
-                .tsd-title {
-                    font-family: 'acta-display';
-                    margin-bottom: 10px;
-                    letter-spacing: 1px;
-                }
 
-                .top-skirt-detail-container {
-                    .tsdc-item {
-                        display: none;
-
-                        .tsdc-item-name,
-                        .tsdc-item-price {
-                            font-family: 'modena';
-                            font-size: $h6;
-                            letter-spacing: 1px;
-                            margin-bottom: 5px;
-                        }
-
-                        .tsdc-item-size {
-                            margin-top: 17px;
-                            margin-bottom: 10px;
-                            font-size: $h7;
-                        }
-
-                        .tsdc-item-info {
-                            font-size: $h7;
-                            margin-bottom: 20px;
-                        }
-
-                        .tsdc-item-shop-pattern {
-                            font-family: 'modena';
-                            margin-top: 10px;
-                            padding: 8px;
-                            background-color: black;
-                            text-align: center;
-                            line-height: 15px;
-
-                            &:hover {
-                                background-color: $t-color;
-                            }
-
-                            a {
-                                font-family: 'modena';
-                                padding: inherit;
-                                color: white;
-                                font-size: $h7;
-                                letter-spacing: 1px;
-                            }
-                        }
-
-                        .tsdc-item-shop-individual-btn {
-                            cursor: pointer;
-                            margin-top: 10px;
-                            width: 100%;
-                            display: flex;
-                            justify-content: space-between;
-
-                            p {
-                                width: 47%;
-                                text-align: center;
-                                border: 1px solid black;
-                                padding: 2px;
-                                line-height: 10px;
-
-                                &:hover {
-                                    border: 1px solid $t-color;
-
-                                    a {
-                                        color: $t-color;
-                                    }
-                                }
-
-                                a {
-                                    padding: inherit;
-                                    font-family: 'modena';
-                                    font-size: 8px;
-                                    letter-spacing: 1px;
-                                }
-                            }
-                        }
-
-                        .tsdc-item-top-desc,
-                        .tsdc-item-skirt-desc {
-                            font-size: $h7;
-
-                            p {
-                                user-select: none;
-                                margin-top: 10px;
-                                text-transform: uppercase;
-                                cursor: pointer;
-
-                                i {
-                                    font-size: $h7;
-                                    padding-right: 5px;
-                                }
-                            }
-
-                            .tsdc-skirt-desc,
-                            .tsdc-top-desc {
-                                display: none;
-                                text-transform: none;
-                            }
-                        }
-
-                        .size-guide {
-                            cursor: pointer;
-                            user-select: none;
-                            margin-top: 10px;
-                            font-size: $h7;
-
-                            p {
-                                margin-bottom: 10px;
-
-                                i {
-                                    padding-right: 5px;
-                                    font-size: $h7;
-                                }
-                            }
-
-                            .size-guide-table {
-                                .size-guide-cm-inches {
-                                    margin-bottom: 10px;
-
-                                    span {
-                                        margin-right: 5px;
-                                        margin-bottom: 10px;
-                                    }
-
-                                    .sg-cm {
-                                        border-bottom: 1px solid black;
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    .tsdc-item:first-child {
-                        display: block;
-                    }
-                }
             }
         }
     }
@@ -1183,6 +1044,16 @@
                     width: 90%;
                 }
             }
+        }
+    }
+}
+
+.section-dressmix {
+    padding: 100px 0;
+
+    .container {
+        @media (min-width: 1750px) {
+            max-width: 1720px;
         }
     }
 }
