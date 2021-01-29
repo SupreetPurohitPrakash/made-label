@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>MIX AND MATCH</title>
+    <link rel="stylesheet" href="assets/fontawesome5/css/all.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.png" />
+
+</head>
+
+<body>
+    <div class="body-container">
+        <!-- notice -->
+        <div class="notice">
+            <p><a href="">Free Frankie Wrap Start Pattern - Click Here</a></p>
+        </div>
+        <!-- nav container -->
+        <div class="nav-container" id="nav-container">
+            <!-- logo -->
+            <div class="nav-logo">
+                <a href="./">
+                    <img src="./assets/images/logo.png" alt="">
+                </a>
+            </div>
+            <!-- bars -->
+            <div class="menu-bar">
+                <i class="material-icons" onclick="NavToggle()">menu</i>
+            </div>
+            <!-- left nav -->
+            <div class="nav-left-list" id="nav-left-list">
+                <!-- bars -->
+                <div class="close-bar">
+                    <i class="material-icons" onclick="NavToggle()">close</i>
+                </div>
+                <div class="nav-item" id="ni-shop-patterns">
+                    <p><a href="">Shop Patterns</a></p>
+                    <div class="nav-item-content">
+                        <div class="row">
+                            <div class="nic-title col-3">
+                                <h1>Shop Patterns</h1>
+                            </div>
+                            <div class="nic-shop-patterns col-3">
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                            </div>
+                            <div class="nic-featured col-5">
+                                <a href="">
+                                    <div class="nicf-item">
+                                        <img src="assets/images/look-book-img1.png" alt="" />
+                                        <p>Impermanance: Shop new Season</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item" id="ni-mix-match">
+                    <p><a href="">Mix & Match</a></p>
+                    <div class="nav-item-content">
+                        <div class="row">
+                            <div class="nic-title col-3">
+                                <h1>Mix & Match</h1>
+                            </div>
+                            <div class="nic-shop-patterns col-3">
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                            </div>
+                            <div class="nic-featured col-5">
+                                <a href="">
+                                    <div class="nicf-item">
+                                        <img src="assets/images/look-book-img2.png" alt="" />
+                                        <p>Impermanance: Shop new Season</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item" id="ni-sewing">
+                    <p><a href="">Sewing</a></p>
+                    <div class="nav-item-content">
+                        <div class="row">
+                            <div class="nic-title col-3">
+                                <h1>Sewing</h1>
+                            </div>
+                            <div class="nic-shop-patterns col-3">
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                            </div>
+                            <div class="nic-featured col-5">
+                                <a href="">
+                                    <div class="nicf-item">
+                                        <img src="assets/images/look-book-img3.png" alt="" />
+                                        <p>Impermanance: Shop new Season</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item" id="ni-our-story">
+                    <p><a href="">Our Story</a></p>
+                </div>
+                <div class="nav-item currency">
+                    <p>Australia ($AUD)</p>
+                </div>
+                <div class="nav-item login">
+                    <p><a href="">Login</a></p>
+                </div>
+            </div>
+            <!-- right nav -->
+            <div class="nav-right-list">
+                <div class="nav-item search" onclick="toggleSearch()">
+                    <p><span>Search</span> <i class="material-icons">search</i></p>
+                </div>
+                <div class="nav-item favourite">
+                    <p>
+                        <i id="fav-icon" class="material-icons" onmouseover="changeFavIcon('favorite')"
+                            onmouseout="changeFavIcon('favorite_border')">favorite_border</i>
+                    </p>
+                </div>
+                <div class="nav-item currency">
+                    <p>Australia ($AUD)</p>
+                </div>
+                <div class="nav-item login">
+                    <p><a href="">Login</a></p>
+                </div>
+                <div class="nav-item caret">
+                    <p>
+                        <a href=""><i class="material-icons">shopping_basket</i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="nav-search-form" id="search-form">
+                <input type="text" placeholder="search" />
+                <button type="submit"><i class="material-icons">search</i></button>
+                <div class="search-close-btn" onclick="toggleSearch()">
+                    <i class="material-icons">close</i>
+                </div>
+            </div>
+        </div>
+        <!-- nav-container -->
+
+        <!-- ecommerce container -->
+        <section class="section section-blog-spage">
+            <div class="blog-spage">
+                <div class="blog-spage--row">
+                    <div class="blog-spage--side">
+                        <div class="blog-spage--side-sticky">
+                            <div class="blog-spage--side-text">
+                                <h3>Sew Along Tutorial</h3>
+                                <h2 class="heading">nomad dreamer top</h2>
+                            </div>
+                            <div class="blog-spage--side-freeptn">
+                                <img src="./assets/images/Front.jpg" alt="">
+                                <a href="#">Buy Pattern</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-spage--main">
+                        <div class="blog-content">
+                            <div class="blog-content--herovideo">
+                                <div class="blog-content--herovideo-iframe">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/CPfa4fPYVAU"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="blog-content--text">
+                                <h2>Welcome to our sew-along tutorial for the Frankie Wrap Skirt. If you are a beginner
+                                    we highly suggest watching the entire tutorial before you start sewing.</h2>
+                                <h2><a href="#">DOWNLOAD PATTERN INFORMATION</a></h2>
+                                <h1>helpful related links & videos</h1>
+                                <h2><a href="#">HOW TO MAKE BIAS BINDING</a></h2>
+                                <h2><a href="#">USING EASE TO MATCH PATTERN PIECES</a></h2>
+                                <h2><a href="#">ASSEMBLING PATTERN</a></h2>
+                                <h2><a href="#">BUY THE NOMAD DREAMER TOP</a></h2>
+                                <h1>time stamps</h1>
+                                <h2 class="max-width--600">We have listed the time stamps to help you skip to particular
+                                    section within the
+                                    video.</h2>
+                                <ul class="blog-content--listsimple">
+                                    <li>1.15 Cutting the Pattern
+                                    <li>2.44 Place on Fold Pattern Pieces</li>
+                                    <li>3.17 Mirror Cut Pattern Pieces</li>
+                                    <li>4.09 Assembling the Skirt and Frill</li>
+                                    <li>4.32 How to Sew the French Seams</li>
+                                    <li>7.41 Attaching the Frill</li>
+                                    <li>12.44 Adding the Waistband</li>
+                                </ul>
+                                <h1>written instructions</h1>
+                                <h2><a href="#">Download written instructions</a></h2>
+                                <h3 class="text-uppercase">You will need:</h3>
+                                <p>3m of fabric - non stretch and lightweight. We used Rayon (love)
+                                    (you can get away with less fabric but always good to have some spare and you can
+                                    make a matching top & scrunchies!! Also if you are up cycling old clothes you can do
+                                    the frill in a different material)
+                                </p>
+                                <ul class="blog-content--list">
+                                    <li>Cotton to match</li>
+                                    <li>Fabric Cutting Scissors</li>
+                                    <li>Paper cutting scissors (no they are not the same thing?!?!?!)</li>
+                                    <li>Friction marker pen (these are a MUST HAVE - SO HANDY IT’S INSANE ITEM)</li>
+                                    <li>Sewing Pins</li>
+                                    <li>Measuring tape</li>
+                                    <li>Seam Ripper (in case of mistakes)</li>
+                                    <li>Sewing Machine </li>
+                                    <li>A way to print our downloaded pattern on A4 paper</li>
+                                    <li>Sticky tape to join the pattern up</li>
+                                </ul>
+                                <p>Not needed but good to have</p>
+                                <ul class="blog-content--list">
+                                    <li>Rotary Cutter + Cutting Mat (my preferred method of cutting the fabric)</li>
+                                    <li>Weights (or anything heavy-ish)</li>
+                                    <li>Tiny Trimming scissors</li>
+                                    <li>Seam ruler (super handy)</li>
+                                    <li>Safety pins</li>
+                                </ul>
+                                <h2>VIDEO TIMESTAMP 3.17 <br>
+                                    PRINTING AND CUTTING THE PATTERN</h2>
+                                <p>= Download and print out pattern. Make sure you print ‘to size’. To check this simply
+                                    measure the 3cm line on page 2 of your download.</p>
+                                <p>= Cut all the way around the outside rectangle edge on each page.</p>
+
+                                <p>= Now it’s time to tape them up… for a guide to how each pattern piece looks,
+                                    refer to the guide on page 2 of the download</p>
+                                <p>= Using the numbers to guide you, sticky tape together the pattern pieces
+                                    together using the tabs, which are marked by the stripy lines.<br>
+                                    + you will know once you are ready to start a new pattern piece as the number
+                                    will come back to 1</p>
+                                <p>= Cut out each pattern piece, ending up with:</p>
+                                <ul class="blog-content--list">
+                                    <li>BACK PANEL</li>
+                                    <li>SIDE PANNEL</li>
+                                    <li>MAIN FRILL</li>
+                                    <li>TOP FRILL</li>
+                                </ul>
+                                <p>= Lastly cut out each of the labels on the last page and put to one side</p>
+                                <h2>VIDEO TIMESTAMP 3.17 <br>
+                                    CUTTING THE MATERIAL PATTERN PEICES</h2>
+                                <p>= For this project non-stretch light weight fabrics… we used a rayon which is a great
+                                    natural fibre and has a lovely drape!</p>
+                                <p>= Handy tip is always make sure you wash your fabric before you use it as it can
+                                    shrink if you don’t - which is always a major bummer.</p>
+                                <p>= Start by ironing your fabric. Be sure that you test the iron temperature on a small
+                                    section of your fabric first.</p>
+                                <p>= Before we dive into the main part of the skirt we are going to cut the brand of the
+                                    skirt. Use the selvedge edge of the fabric (the edge that has a finished edge) as a
+                                    guide. First cut away the frayed edge the measure 10cm in and cut two strips; </p>
+                                <ul class="blog-content--list">
+                                    <li>10cm x 220cm</li>
+                                    <li>10cm x 135cm</li>
+                                </ul>
+                                <p>= Now cut each of the pattern pieces, we use a cutting board, fabric weights and a
+                                    rotary cutter as it’s more accurate and faster but you can also use scissors . When
+                                    cutting the pattern note;</p>
+                                <ul class="blog-content--list">
+                                    <li>How many of each pattern you need - written on the pattern</li>
+                                    <li>to place each pattern piece on grain. On grain is lining up the ‘place on grain
+                                        line’ to either the selvedge edge or 90degrees along the cut edge.</li>
+                                    <li>when cutting ‘place on fold’ pattern pieces, fold fabric in half and line the
+                                        place on fold side of the pattern up with the folded edge of the fabric. Be sure
+                                        not
+                                        to cut along the folded edge.</li>
+                                    <li>when cutting two pieces of the same pattern you can either fold the material in
+                                        half and cut both at the same time OR flip the pattern, so cut one with the
+                                        pattern
+                                        facing up, then one with the pattern facing down.</li>
+                                    <li>Be slow and very careful when cutting the pieces as even slight movement in the
+                                        fabric can cause issues later on.</li>
+                                </ul>
+                                <p>Then you should end up with all the pieces cut…</p>
+                                <ul class="blog-content--list">
+                                    <li>Start by cutting ONE BACK PANEL (**place on fold to cut)</li>
+                                    <li>then Two SIDE PANNELS</li>
+                                    <li>then four MAIN FRILL (**place on fold to cut)</li>
+                                    <li>finally two TOP FRILLS</li>
+                                </ul>
+                                <p>And your two waist bands</p>
+                                <p>Remember<br>= Once you cut each pattern piece, safety pin (or regular pin) a label to
+                                    each one so if they get separated from the pattern, you know what pieces they are.
+                                </p>
+                                <h3 class="font-weight-bold mb-0">VIDEO TIMESTAMP 3.17</h3>
+                                <p>SEWING THE FRILL</p>
+                                <p>= Next we will assemble the FRILL. First join the four sections of the MAIN FRILL
+                                    together along the short side edge using a French seam.
+                                    **always pin from the top of the frill and pin down to the bottom, so if there was
+                                    any movement while cutting the pattern causing uneven joins you can trim the hem
+                                    edge before sewing final hem.</p>
+                                <p>= Then using a French Seam, join the TOP FRILL pieces to either end of the MAIN FRILL
+                                    section you just sewed together. </p>
+                                <p>= You now have your FRILL! YAY! Now we will join the frill to the skirt.</p>
+                                <h3 class="font-weight-bold mb-0">VIDEO TIMESTAMP 3.17</h3>
+                                <p>SEWING THE MAIN SECTION OF THE SKIRT TO THE FRILL </p>
+                                <div class="blog-content--img">
+                                    <img src="./assets/images/sewing-mainsection-skirt.jpg" alt="">
+                                </div>
+                                <p>= Fold the main section of your skirt in half and mark the middle curved bottom of
+                                    your skirt with your handy dandy markable pen. (always make sure you check this
+                                    irons off your fabric first)</p>
+                                <p>= Fold your frill in half and mark the top middle edge.</p>
+                                <p>= With right sides facing out line up the two centre marked points, then pin the
+                                    skirt and frill together, starting from the middle and working out to the top on
+                                    both edges.</p>
+                                <p>= Sew the frill and skirt together with a 5/8 inch French seam. </p>
+                                <p>= If there is any excess at the top of the skirt from movement while cutting the
+                                    pattern, trim evenly.</p>
+                                <h3 class="font-weight-bold mb-0">VIDEO TIMESTAMP 3.17</h3>
+                                <p>HEMING THE SKIRT</p>
+                                <p>= Starting at the top of the skirt carefully trim off any frayed edges or uneven seam
+                                    joins around the seam edge of the frill. Keep the trimming as minimal as possible.
+                                </p>
+                                <p>= Hem the edge of your frill, you can use a rolled seam foot or we just use the below
+                                    technique.</p>
+                                <p>Rolled seam (without a rolled seam foot)</p>
+                                <p>= Press about 1/2 cm the whole way around the seam, using your seam ruler to check
+                                    you’re keeping it even</p>
+                                <p>= Then come back around and roll in another 1/2cm so you encase the frayed edge.
+                                    Pinning if you need to</p>
+                                <p>= Then sew a 1/4 inch all the way around the double pressed seam!</p>
+                                <p>= Now we are almost done - just have to sew the band on.</p>
+
+                                <h3 class="font-weight-bold mb-0">VIDEO TIMESTAMP 3.17</h3>
+                                <p>SEWING THE WAIST BAND</p>
+                                <p>= First we create a hole for the tie to go through.</p>
+                                <p>= Get your two long pieces and place right sides together.</p>
+                                <p class="mb-5">= Mark every 2cm with your fabric pen.</p>
+                                <p>= Sew a seam as close to the bottom of the waistband as you feel comfortable.</p>
+                                <p>= To finish off you can sew a rectangle around the holes for the tie to make sure it
+                                    doesn’t move.</p>
+                                <p>= Press your waist band, cut off any loose threads and you are ready to hit the
+                                    streets in your new skirt! Boom!!!!</p>
+                                <div class="blog-content--images">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="blog-content--images-item">
+                                                <img src="./assets/images/images-item-1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="blog-content--images-item">
+                                                <img src="./assets/images/images-item-2.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="blog-content--images-item">
+                                                <img src="./assets/images/images-item-3.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="blog-content--images-tag text-center">
+                                            <h2>@MADELABEL_</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="blog-content--notice mt-5">
+                                    <p>we love to see your creations... tag us in your insta shots and if repost your
+                                        photo we’ll send you a free pattern credit for your next creation....</p>
+                                    <span>#NOMADDREAMERTOP</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="section section-blog-herotext">
+            <div class="blog-herotext">
+                <h2>What Will You Create Next</h2>
+            </div>
+        </section>
+
+        <section class="section section-blog-slider">
+            <div class="container">
+                <div class="blog-slider">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="blog-slider-img">
+                                <img src="./assets/images/0I7A2760.jpg" alt="">
+                            </div>
+                            <p><strong>SIERRA BELLE WRAP DRESS</strong></p>
+                            <p>$16AUD</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="blog-slider-img">
+                                <img src="./assets/images/Wall.jpg" alt="">
+                            </div>
+                            <p><strong>NOMAD DREAMER TOP</strong></p>
+                            <p>$8AUD</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="blog-slider-img">
+                                <img src="./assets/images/0I7A2647.jpg" alt="">
+                            </div>
+                            <p><strong>FREYA STARGAZER WRAP DRESS</strong></p>
+                            <p>$16AUD</p>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="blog-slider-img">
+                                <img src="./assets/images/0I7A2520.jpg" alt="">
+                            </div>
+                            <p><strong>FREYA BELLE WRAP DRESS</strong></p>
+                            <p>$16AUD</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ecommerce container -->
+    </div>
+    <!-- body container---------------------------------------------- -->
+
+    <!-- footer container ------------------------------------------- -->
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="sewing">
+                <h1 class="title">Sewing</h1>
+                <div class="sewing-list">
+                    <p class="sewing-items"><a href="">Mix & Match Collections</a></p>
+                    <p class="sewing-items"><a href="">Sew-Along Tutorials</a></p>
+                    <p class="sewing-items">
+                        <a href="">Quick Lessons + Journals</a>
+                    </p>
+                    <p class="sewing-items"><a href="">Difficulty Scale</a></p>
+                </div>
+            </div>
+
+            <div class="discover">
+                <h1 class="title">Discover</h1>
+                <div class="discover-list">
+                    <p class="discover-items">
+                        <a href="">Our Story</a>
+                    </p>
+                    <p class="discover-items">
+                        <a href="">Size Guide</a>
+                    </p>
+                    <p class="discover-items">
+                        <a href="">Style Maker Stories</a>
+                    </p>
+                    <p class="discover-items">
+                        <a href="">FAQs</a>
+                    </p>
+                    <p class="discover-items">
+                        <a href="">GIving Back</a>
+                    </p>
+                    <p class="discover-items">
+                        <a href="">Contact Us</a>
+                    </p>
+                    <p class="discover-items">
+                        <a href="">Garment Care</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="contact">
+                <div class="icon-title">
+                    <img src="./assets/icons/sewing-icon.png" alt="" />
+                    <p class="title">Get Our Free Frankie Wrap Skirt Pattern</p>
+                </div>
+                <div class="footer-link">
+                    <p><a href="">GET IT HERE</a></p>
+                </div>
+                <div class="footer-social-links">
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                    <a href=""><i class="fab fa-pinterest-p"></i></a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p class="copyright-label">copyright Made Lable 2020</p>
+            <p class="privacy-policy"><a href="">Privacy Policy</a></p>
+            <p class="terms-of-use"><a href="">Terms of Use</a></p>
+        </div>
+    </div>
+    <!-- footer container ------------------------------------------- -->
+</body>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/custom.js"></script>
+
+</html>

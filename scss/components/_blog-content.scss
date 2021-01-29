@@ -123,6 +123,18 @@
         }
     }
 
+    &--listsimple {
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 95px;
+
+        li {
+            color: #0a0000;
+            font-size: 18px;
+            margin-bottom: 35px;
+        }
+    }
+
     &--size {
         text-align: center;
 
@@ -151,6 +163,27 @@
             font-size: 12px;
             line-height: 18px;
             margin-bottom: 0;
+        }
+    }
+
+    &--images {
+        margin: 110px 0 85px;
+        max-width: 708px;
+        @include margin-auto;
+
+        [class^="col-"] {
+            padding: 15px;
+        }
+
+        &-item {
+            width: 216px;
+            height: 216px;
+            max-width: 100%;
+            @include margin-auto;
+
+            img {
+                @include imgfit;
+            }
         }
     }
 
