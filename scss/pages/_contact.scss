@@ -1,0 +1,91 @@
+.section-contact {
+    padding: 50px 0 80px;
+}
+
+.contact {
+    &-row {
+        margin: 0 -27px;
+
+        [class^="col-"] {
+            padding: 27px;
+        }
+    }
+
+    &-img {
+        height: 790px;
+
+        img {
+            @include imgfit;
+        }
+    }
+
+    &-cont {
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &-title {
+        font-family: $font-title;
+        font-size: 140px;
+        margin-bottom: 50px;
+        display: inline-block;
+
+        @media (min-width: 992px) {
+            margin-top: 75px;
+            margin-left: -55px;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            display: block;
+            width: 104%;
+            height: 2px;
+            background-color: #000;
+        }
+    }
+
+    &-social {
+        margin-top: 75px;
+
+        p {
+            text-align: center;
+            font-family: $font-alt;
+            font-size: 12px;
+            text-transform: uppercase;
+            margin-top: 25px;
+            margin-left: 40%;
+        }
+
+        &-icons {
+            span {
+                display: inline-block;
+
+                a {
+                    display: block;
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    text-align: center;
+                    color: #fff;
+                    background-color: #333;
+
+                    &:hover {
+                        color: #000;
+                        background-color: $t-color;
+                    }
+
+                    i {
+                        font-size: 14px;
+                    }
+                }
+
+                &:not(:last-child) {
+                    margin-right: 25px;
+                }
+            }
+        }
+    }
+}
