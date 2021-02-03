@@ -1,0 +1,128 @@
+.layoutsd {
+    &--row {
+        display: flex;
+
+        @media (max-width: 767px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &--side {
+        width: 345px;
+        border-right: 1px solid $t-color;
+        border-bottom: 1px solid $t-color;
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+
+        &-sticky {
+            position: sticky;
+            top: 45px;
+            height: calc(100vh - 75px);
+            padding: 160px 35px 20px;
+            display: flex;
+            flex-flow: column;
+            align-items: flex-end;
+            justify-content: flex-end;
+
+            &-top {
+                justify-content: flex-start;
+            }
+
+            @media (max-width: 767px) {
+                padding: 60px 40px;
+                height: auto;
+                justify-content: center;
+            }
+        }
+
+        &-text {
+            h3 {
+                font-family: $font-alt;
+                font-size: 12px;
+                margin-bottom: 2px;
+            }
+        }
+
+        &-freeptn {
+            margin-left: auto;
+            width: 125px;
+            text-align: center;
+
+            img {
+                max-width: 100%;
+            }
+
+            a {
+                font-family: $font-alt;
+                font-size: 8px;
+                padding-bottom: 2px;
+                // text-decoration: underline;
+                border-bottom: 1.5px solid #000;
+
+                &:hover {
+                    border-bottom-color: $t-color;
+                }
+            }
+        }
+    }
+
+    &--main {
+        width: calc(100% - 345px);
+        padding: 20px 35px;
+    }
+
+    &--side,
+    &--main {
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+
+    &-list {
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 0;
+        margin-top: 40px;
+
+        li {
+            margin-bottom: 20px;
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &-social {
+        position: absolute;
+        bottom: 35px;
+        left: 0;
+        width: 100%;
+        padding: 0 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span {
+            display: inline-block;
+
+            a {
+                display: block;
+                width: 28px;
+                height: 28px;
+                line-height: 28px;
+                border-radius: 50%;
+                color: #fff;
+                background-color: $color-black;
+                text-align: center;
+
+                &:hover {
+                    color: $color-black;
+                    background-color: $t-color;
+                }
+            }
+        }
+    }
+}

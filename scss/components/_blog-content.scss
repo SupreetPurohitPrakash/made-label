@@ -12,6 +12,10 @@
         line-height: 21px;
         margin-bottom: 30px;
 
+        @media (max-width: 767px) {
+            margin-bottom: 15px;
+        }
+
         a {
             border-bottom: 2px solid #000;
 
@@ -66,12 +70,33 @@
         max-width: 660px;
         border-top: 1px solid $b-color;
         margin: 60px auto;
+
+        @media (max-width: 767px) {
+            margin: 30px auto;
+        }
+    }
+
+    .blog-content--text-title .blog-content--spacer {
+        border-top-color: rgba(#000, .1);
     }
 
     &--heroimg {
         width: 100%;
         height: 677px;
         margin-bottom: 58px;
+
+        @media (max-width: 1200px) {
+            height: 500px;
+        }
+
+        @media (max-width: 991px) {
+            height: 350px;
+        }
+
+        @media (max-width: 767px) {
+            height: 465px;
+            margin-bottom: 35px;
+        }
 
         img {
             @include imgfit;
