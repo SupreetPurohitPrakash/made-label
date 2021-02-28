@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>MIX AND MATCH</title>
+    <link rel="stylesheet" href="assets/fontawesome5/css/all.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/images/favicon.png" />
+
+</head>
+
+<body>
+    <div class="body-container">
+        <!-- notice -->
+        <div class="notice">
+            <p><a href="">Free Frankie Wrap Start Pattern - Click Here</a></p>
+        </div>
+        <!-- nav container -->
+        <div class="nav-container" id="nav-container">
+            <!-- logo -->
+            <div class="nav-logo">
+                <a href="./">
+                    <img src="./assets/images/logo.png" alt="">
+                </a>
+            </div>
+            <!-- bars -->
+            <div class="menu-bar">
+                <i class="material-icons" onclick="NavToggle()">menu</i>
+            </div>
+            <!-- left nav -->
+            <div class="nav-left-list" id="nav-left-list">
+                <!-- bars -->
+                <div class="close-bar">
+                    <i class="material-icons" onclick="NavToggle()">close</i>
+                </div>
+                <div class="nav-item" id="ni-shop-patterns">
+                    <p><a href="">Shop Patterns</a></p>
+                    <div class="nav-item-content">
+                        <div class="row">
+                            <div class="nic-title col-3">
+                                <h1>Shop Patterns</h1>
+                            </div>
+                            <div class="nic-shop-patterns col-3">
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                            </div>
+                            <div class="nic-featured col-5">
+                                <a href="">
+                                    <div class="nicf-item">
+                                        <img src="assets/images/look-book-img1.png" alt="" />
+                                        <p>Impermanance: Shop new Season</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item" id="ni-mix-match">
+                    <p><a href="">Mix & Match</a></p>
+                    <div class="nav-item-content">
+                        <div class="row">
+                            <div class="nic-title col-3">
+                                <h1>Mix & Match</h1>
+                            </div>
+                            <div class="nic-shop-patterns col-3">
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                            </div>
+                            <div class="nic-featured col-5">
+                                <a href="">
+                                    <div class="nicf-item">
+                                        <img src="assets/images/look-book-img2.png" alt="" />
+                                        <p>Impermanance: Shop new Season</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item" id="ni-sewing">
+                    <p><a href="">Sewing</a></p>
+                    <div class="nav-item-content">
+                        <div class="row">
+                            <div class="nic-title col-3">
+                                <h1>Sewing</h1>
+                            </div>
+                            <div class="nic-shop-patterns col-3">
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                                <p class="nicsp-item"><a href="">Dress</a></p>
+                                <p class="nicsp-item"><a href="">Jacket & Coat</a></p>
+                            </div>
+                            <div class="nic-featured col-5">
+                                <a href="">
+                                    <div class="nicf-item">
+                                        <img src="assets/images/look-book-img3.png" alt="" />
+                                        <p>Impermanance: Shop new Season</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item" id="ni-our-story">
+                    <p><a href="">Our Story</a></p>
+                </div>
+                <div class="nav-item currency">
+                    <p>Australia ($AUD)</p>
+                </div>
+                <div class="nav-item login">
+                    <p><a href="">Login</a></p>
+                </div>
+            </div>
+            <!-- right nav -->
+            <div class="nav-right-list">
+                <div class="nav-item search" onclick="toggleSearch()">
+                    <p><span>Search</span> <i class="material-icons">search</i></p>
+                </div>
+                <div class="nav-item favourite">
+                    <p>
+                        <i id="fav-icon" class="material-icons" onmouseover="changeFavIcon('favorite')"
+                            onmouseout="changeFavIcon('favorite_border')">favorite_border</i>
+                    </p>
+                </div>
+                <div class="nav-item currency">
+                    <p>Australia ($AUD)</p>
+                </div>
+                <div class="nav-item login">
+                    <p><a href="">Login</a></p>
+                </div>
+                <div class="nav-item caret">
+                    <p>
+                        <a href=""><i class="material-icons">shopping_basket</i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="nav-search-form" id="search-form">
+                <input type="text" placeholder="search" />
+                <button type="submit"><i class="material-icons">search</i></button>
+                <div class="search-close-btn" onclick="toggleSearch()">
+                    <i class="material-icons">close</i>
+                </div>
+            </div>
+        </div>
+        <!-- nav-container -->
+
+        <!-- ecommerce container -->
+        <section class="section section-shop">
+            <div class="shop">
+                <div class="shop-row row">
+                    <div class="shop-col shop-col-side col-lg-3">
+                        <h2 class="heading text-center">all patterns</h2>
+                        <div class="shop-filter">
+                            <div class="shop-filter-header">
+                                <h3>Filter by:</h3>
+                            </div>
+                            <div class="shop-filter-body">
+                                <div class="shop-filter-item open">
+                                    <h4 class="shop-filter-title">Category</h4>
+                                    <ul class="shop-filter-list">
+                                        <li class="selected"><a href="#">Mini Dresses</a></li>
+                                        <li><a href="#">Mini Dresses</a></li>
+                                        <li class="selected"><a href="#">Maxi Dresses</a></li>
+                                        <li><a href="#">Wrap Dresses</a></li>
+                                        <li><a href="#">Sleeved Tops</a></li>
+                                        <li><a href="#">Sleeveless Tops</a></li>
+                                        <li><a href="#">Mini Skirts</a></li>
+                                        <li><a href="#">Midi Skirts</a></li>
+                                        <li><a href="#">Maxi Skirts</a></li>
+                                        <li><a href="#">Wrap Skirts</a></li>
+                                    </ul>
+                                </div>
+                                <div class="shop-filter-item">
+                                    <h4 class="shop-filter-title">Skill Level</h4>
+                                    <ul class="shop-filter-list">
+                                        <li><a href="#">Beginner</a></li>
+                                        <li class="selected"><a href="#">Advanced Beginner</a></li>
+                                        <li><a href="#">Intermediate</a></li>
+                                        <li><a href="#">Advanced</a></li>
+                                    </ul>
+                                </div>
+                                <div class="shop-filter-item">
+                                    <h4 class="shop-filter-title">Mix &amp; Match Collections</h4>
+                                    <ul class="shop-filter-list">
+                                        <li><a href="#">Wrap Collection</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="shop-filter-footer">
+                                <a href="#">Reset all filters</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shop-col col-lg-9">
+                        <div class="shop-product-header">
+                            <div class="shop-sort">
+                                <label for="sortSelect">Sort By</label>
+                                <select id="sortSelect" name="" class="form-control">
+                                    <option>New Releases</option>
+                                    <option>Coming Soon</option>
+                                    <option>Price - low to high</option>
+                                    <option>Price - high to low</option>
+                                </select>
+                            </div>
+                            <button class="btn shop-illustrationtoggle">Illustration View</button>
+                        </div>
+                        <div class="shop-product-body">
+                            <div class="product-row">
+                                <div class="product-col col-lg-4">
+                                    <div class="product-card">
+                                        <div class="product-card-img">
+                                            <img src="./assets/images/product-1.jpg" alt="" class="img-default">
+                                            <img src="./assets/images/product-1.jpg" alt="" class="img-onhover">
+                                            <img src="./assets/images/product-1-illustrate.jpg" alt=""
+                                                class="img-onillustrate">
+                                        </div>
+                                        <div class="product-card-cont">
+                                            <button class="fav-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="26.076" height="22.986"
+                                                    viewBox="0 0 26.076 22.986">
+                                                    <g id="Group_225" data-name="Group 225"
+                                                        transform="translate(0.5 0.5)">
+                                                        <path id="Path_158" data-name="Path 158"
+                                                            d="M573.684,367.158a6.608,6.608,0,0,0-5.923,3.684,6.611,6.611,0,0,0-12.538,2.931c0,6.729,12.556,15.265,12.556,15.265s12.52-8.663,12.52-15.265A6.615,6.615,0,0,0,573.684,367.158Z"
+                                                            transform="translate(-555.223 -367.158)" fill="none"
+                                                            stroke="#fd4f31" stroke-miterlimit="10" stroke-width="2" />
+                                                    </g>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ecommerce container -->
+    </div>
+    <!-- body container---------------------------------------------- -->
+
+    <!-- footer container ------------------------------------------- -->
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="sewing">
+                <h1 class="title">Sewing</h1>
+                <div class="sewing-list">
+                    <p class="sewing-items"><a href="">Mix & Match Collections</a></p>
+                    <p class="sewing-items"><a href="">Sew-Along Tutorials</a></p>
+                    <p class="sewing-items">
+                        <a href="">Quick Lessons + Journals</a>
+                    </p>
+                    <p class="sewing-items"><a href="">Difficulty Scale</a></p>
+                </div>
+            </div>
+
+            <div class="discover">
+                <h1 class="title">Discover</h1>
+                <div class="discover-list">
+                    <p class="discover-items">
+                        <a href="">Our Story</a>
+                    </p>
+                    <p class="discover-items">
+                        <a href="">Size Guide</a>
+                    </p>
+                    <p class="discover-items">
+                        <a href="">Style Maker Stories</a>
+                    </p>
+                    <p class="discover-items">
+                        <a href="">FAQs</a>
+                    </p>
+                    <p class="discover-items">
+                        <a href="">GIving Back</a>
+                    </p>
+                    <p class="discover-items">
+                        <a href="">Contact Us</a>
+                    </p>
+                    <p class="discover-items">
+                        <a href="">Garment Care</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="contact">
+                <div class="icon-title">
+                    <img src="./assets/icons/sewing-icon.png" alt="" />
+                    <p class="title">Get Our Free Frankie Wrap Skirt Pattern</p>
+                </div>
+                <div class="footer-link">
+                    <p><a href="">GET IT HERE</a></p>
+                </div>
+                <div class="footer-social-links">
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                    <a href=""><i class="fab fa-pinterest-p"></i></a>
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p class="copyright-label">copyright Made Lable 2020</p>
+            <p class="privacy-policy"><a href="">Privacy Policy</a></p>
+            <p class="terms-of-use"><a href="">Terms of Use</a></p>
+        </div>
+    </div>
+    <!-- footer container ------------------------------------------- -->
+</body>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/custom.js"></script>
+
+</html>

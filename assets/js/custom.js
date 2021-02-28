@@ -141,5 +141,41 @@ function dressResult() {
         if ($(this).attr('data-id') == topId + botId) {
             $(this).addClass('active');
         }
-    })
+    });
+
 }
+
+$('.shop-filter-title').click(function () {
+    var filterItem = $(this).parents('.shop-filter-item');
+    var filterList = filterItem.find('.shop-filter-list');
+
+    if (filterItem.hasClass('open')) {
+        filterList.slideUp();
+        setTimeout(function () {
+            filterItem.removeClass('open');
+        }, 300);
+    } else {
+        filterList.slideDown();
+        setTimeout(function () {
+            filterItem.addClass('open');
+        }, 300);
+    }
+})
+
+$('.shop-filter-list li').click(function () {
+    $(this).toggleClass('selected');
+});
+
+$('.shop-filter-footer').click(function () {
+    $('.shop-filter-list .selected').removeClass('selected');
+});
+
+$('.shop-illustrationtoggle').click(function () {
+    if ($(this).hasClass('active')) {
+        $(this).removeClass('active');
+        $('.product-card-img .img-onillustrate').hide();
+    } else {
+        $(this).addClass('active');
+        $('.product-card-img .img-onillustrate').show();
+    }
+});

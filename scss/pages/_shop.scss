@@ -1,0 +1,198 @@
+.shop {
+    padding: 20px;
+    max-width: 1920px;
+    @include margin-auto;
+}
+
+.shop-filter {
+    padding: 30px;
+    background-color: $color-gray;
+    border-top: 2px solid $color-main;
+
+    &-header {
+        padding-bottom: 20px;
+        margin-bottom: 65px;
+        border-bottom: 1px solid $color-main;
+        text-align: center;
+
+        h3 {
+            font-family: $font-alt;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+    }
+
+    &-body {
+        padding: 30px 20px 30px 15px;
+        border-top: 1px solid $color-main;
+        border-bottom: 1px solid $color-main;
+    }
+
+    &-item {
+        @include unselect;
+    }
+
+    &-title {
+        position: relative;
+        font-family: $font-common;
+        font-size: 14px;
+        padding: 10px 0;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            background-color: #000;
+            transition: all .2s;
+        }
+
+        &::before {
+            width: 12px;
+            height: 2px;
+        }
+
+        &::after {
+            width: 2px;
+            height: 12px;
+            right: 5px;
+        }
+    }
+
+    &-item.open &-title::after {
+        transform: translateY(-50%) rotate(90deg);
+    }
+
+    &-list {
+        padding-left: 10px;
+        list-style-type: none;
+
+        li {
+            font-family: $font-common;
+            font-size: 13px;
+            padding: 7px 0;
+            text-transform: uppercase;
+            @include unselect;
+
+            &.selected {
+                color: $color-sub;
+
+                &::before {
+                    content: "x";
+                    display: inline-block;
+                    text-transform: lowercase;
+                    width: 16px;
+                    height: 16px;
+                    line-height: 14px;
+                    font-size: 14px;
+                    text-align: center;
+                    border-radius: 50%;
+                    color: #fff;
+                    background-color: #000;
+                    margin: 0 8px;
+                }
+            }
+
+            &:focus,
+            a:focus {
+                outline: none;
+            }
+
+            a:hover {
+                color: $color-sub;
+            }
+        }
+    }
+
+    &-item:not(.open) &-list {
+        display: none;
+    }
+
+    &-footer {
+        text-align: center;
+        border-top: 1px solid $color-main;
+        padding: 30px;
+        margin-top: 65px;
+        text-transform: uppercase;
+
+        a:hover {
+            color: $color-sub;
+        }
+    }
+}
+
+.shop-product {
+    &-header {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.shop-sort {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+
+    label,
+    select {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    label {
+        margin-right: 20px;
+        text-transform: uppercase;
+    }
+
+    select {
+        width: 220px;
+        height: 40px;
+    }
+}
+
+.shop-illustrationtoggle {
+    font-size: 14px;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &.active {
+        color: #fff;
+        background-color: #000;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.product-card {
+    &-img {
+        position: relative;
+        height: 480px;
+
+        img {
+            @include imgfit;
+        }
+
+        .img-onhover,
+        .img-onillustrate {
+            @include absoldefault;
+            display: none;
+        }
+    }
+
+    &:hover &-img .img-onhover {
+        display: block;
+    }
+}
